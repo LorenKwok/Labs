@@ -14,17 +14,23 @@ The **/.venv/** folder should be in my **/FastAPI Project/** folder now.
 
 Now I can activate my virtual environment with the following code in my terminal:
 
-``` .venv\Scripts\activate ```
+``` 
+.venv\Scripts\activate 
+```
 
 ## Installing and Running FastAPI and Uvicorn ##
 
 I input the following code to install **FastAPI** and **Uvicorn** from **pip**.
 
-``` pip install "fastapi[standard]" "uvicorn[standard]" ```
+``` 
+pip install "fastapi[standard]" "uvicorn[standard]" 
+```
 
 Now, FastAPI and Uvicorn functions are imported into the environment. To run Uvicorn:
 
-``` python -m uvicorn main:app --reload ```
+``` 
+python -m uvicorn main:app --reload 
+```
 
 **-m** instructs Python to run **uvicorn** as a script that listens for incoming web requests and hands them to FastAPI
 
@@ -36,14 +42,14 @@ Finally, **--reload** (imported from Uvicorn) is a function that restarts the se
 
 To start, I imported the following code as per the guide:
 
-``` from fastapi import FastAPI
+``` 
+from fastapi import FastAPI
 
 app = FastAPI()
 
 @app.get("/")
 async def read_root():
     return {"message": "Hello!!!"} 
-
 ```
 
 **from** and **import** are built-in functions in Python that allow the user to call from a file or package. **from** names the package while **import** identifies what to pull from it. In this case, we are pulling the name **FastAPI** from the package **fastapi**.
