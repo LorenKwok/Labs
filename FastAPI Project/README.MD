@@ -77,3 +77,18 @@ You may also go to **http://127.0.0.1:8000/docs** to view the documentation incl
 ![Screenshot](Screenshots/Docs.png)
 
 ## Path and Query Parameters ##
+
+As per the guide, I input the following code:
+
+```
+@app.get("/items/{item_id}")
+async def read_item(item_id: int):
+    # 'item_id' is taken from the path and converted to int
+    return {"item_id": item_id}
+```
+
+This line of code will ask FastAPI to call whatever item ID is being input and pass it into our function. Now, we have identified **/items/{item_id}** as our endpoint and defined read_item() as our functioning for reading the items. **(item_id: int)** refers to the item ID that is being called followed by an integer. Finally, FastAPI will **return** the variable item ID followed by the integer item ID which will reflect the number on the variable.
+
+Now, if we save and go back to the documentation browser for FastAPI through http://127.0.0.1:8000/docs, we will see a new object called **/items/{item_id}** which is described as **Read Item**. If we click "Try It Out" to test this feature, it will ask us to input an **item_id**, in which case I used ***123*** to try it out which yields the following:
+
+![Screenshot](Screenshots/123.png)
