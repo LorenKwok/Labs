@@ -25,6 +25,7 @@ I input the following code to install **FastAPI** and **Uvicorn** from **pip**.
 ``` 
 pip install "fastapi[standard]" "uvicorn[standard]" 
 ```
+FastAPI is the application which contains all the logic that goes behind API creation. On the other hand, Uvicorn is the server that runs FastAPI and listens for incoming requests. Uvicorn would then make the FastAPI code accessible through a local host: http://127.0.0.1:8000 by default.
 
 Now, FastAPI and Uvicorn functions are imported into the environment. To run Uvicorn:
 
@@ -64,9 +65,9 @@ In **@app.get("/")**, **@** is a Python syntax that takes the function from Fast
 
 Click CTRL+S to save the file to reflect the changes.
 
-## Testing FastAPI on browser ##
+## Testing FastAPI ##
 
-Any time the API has been changed, it will reflect in **http://127.0.0.1:8000/** on the browser.
+Any time the API has been changed, it will reflect in **http://127.0.0.1:8000/**.
 
 When I go to the URL, the following appears:
 
