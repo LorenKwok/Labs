@@ -68,7 +68,7 @@ Any time the API has been changed, it will reflect in **http://127.0.0.1:8000/**
 
 When I go to the URL, the following appears:
 
-!Screenshots/Message Hello.png
+!(Screenshots/Message Hello.png)
 
 
 
