@@ -70,5 +70,7 @@ When I go to the URL, the following appears:
 
 ![Screenshot](Screenshots/Message%20Hello.png)
 
+You may also go to **http://127.0.0.1:8000/docs** to view the documentation including the directories that FastAPI generates automatically:
 
+![Screenshot](Screenshots/Docs.png)
 
