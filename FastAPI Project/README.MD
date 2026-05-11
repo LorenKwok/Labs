@@ -4,10 +4,20 @@ For this FastAPI Project, I followed along with the following guide with the hel
 
 ## Setting up virtual environment ##
 
-First, I created a new folder called "FastAPI Project" with main.py as my Python file.
+First, I created a new folder called **/FastAPI Project/** with **main.py** as my Python file.
 
-Next, I placed the following code to create the virtual environment, called ".venv".
+Next, I placed the following code in my terminal (Not the Python file itself) to create the virtual environment, called **.venv**.
 
 ``` python -m venv .venv ```
 
-The ".venv" folder should be in my FastAPI Project
+The **/.venv/** folder should be in my **/FastAPI Project/** folder now.
+
+Now I can activate my virtual environment with the following code in my terminal:
+
+``` .venv\Scripts\activate ```
+
+## Installing FastAPI and Uvicorn ##
+
+I input the following code to install **FastAPI and **Uvicorn** from **pip**.
+
+``` pip install "fastapi[standard]" "uvicorn[standard]" ```
