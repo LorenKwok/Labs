@@ -64,7 +64,11 @@ Click CTRL+S to save the file to reflect the changes.
 
 ## Testing FastAPI on browser ##
 
-Any time the API has been changed, it will reflect in *http://127.0.0.1:8000/** on the browser.
+Any time the API has been changed, it will reflect in **http://127.0.0.1:8000/** on the browser.
+
+When I go to the URL, the following appears:
+
+!Screenshots/Message-Hello
 
 
 
