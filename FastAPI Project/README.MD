@@ -38,6 +38,8 @@ In **main:app* (imported from FastAPI), main is the folder name without the .py 
 
 Finally, **--reload** (imported from Uvicorn) is a function that restarts the server whenever a file is saved. Claude instructs that this is for development only and should never be used in production.
 
+This command needs to be used from the terminal to reflect changes onto the API.
+
 ## Testing the API ##
 
 To start, I imported the following code as per the guide:
@@ -74,3 +76,4 @@ You may also go to **http://127.0.0.1:8000/docs** to view the documentation incl
 
 ![Screenshot](Screenshots/Docs.png)
 
+## Path and Query Parameters ##
