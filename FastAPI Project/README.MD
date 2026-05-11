@@ -42,7 +42,9 @@ app = FastAPI()
 
 @app.get("/")
 async def read_root():
-    return {"message": "Hello!!!"} ```
+    return {"message": "Hello!!!"} 
+
+```
 
 **from** and **import** are built-in functions in Python that allow the user to call from a file or package. **from** names the package while **import** identifies what to pull from it. In this case, we are pulling the name **FastAPI** from the package **fastapi**.
 
