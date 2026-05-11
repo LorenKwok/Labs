@@ -1,6 +1,6 @@
 # FastAPI Project #
 
-For this FastAPI Project, I followed along with the following guide with the help of Claude to assist me with any errors: https://github.com/inanpy/fastapi-getting-started-guide
+For this FastAPI Project, I followed along with the following guide with the help of Claude to assist me with any errors and help me learn by defining functions and objects: https://github.com/inanpy/fastapi-getting-started-guide
 
 ## Setting up virtual environment ##
 
