@@ -101,17 +101,34 @@ For this lab, I first wrote the code myself then used Claude to help with correc
 
 ### 1. music_store.py ###
 
-First, I defined the code as main() for when it runs.
+First, I defined the code as `main()` for when it runs.
 
-I simply set the default balance to 10.0 with balance = 10.0. Afterwards, I introduced the while function to indicate that the loop will continue so long as the balance is higher than 0.09 which is the cost of the lowest song. Therefore, while the balance is still able to purchase any item in the list, then the loop can still run. The while statement would keep the code running until it breaks once the balance is not enough to purchase anything.
+I simply set the default balance to 10.0 with `balance = 10.0`. Afterwards, I introduced the `while` function to indicate that the loop will continue so long as the balance is higher than 0.09 which is the cost of the lowest song. Therefore, while the balance is still able to purchase any item in the list, then the loop can still run. The `while` statement would keep the code running until it breaks once the balance is not enough to purchase anything.
 
-I assigned the input to the variable n which asks the user to enter the cost of the song amongst three different possible options: $0.99, $1.99, $2.99. For the purpose of this lab, I did not include an option for if the user inputs a number outside of these three options.
+```python
+while balance >= 0.99:
+```
 
-I introduced the if statement which indicates that a conditional will occur if the balance is equal to or higher than the input. Once the user inputs the cost of the song, it will subtract the input from the balance. Something that was not included in this tutorial is the round() function which rounds a floating number to a specified decimal. In this case, I typed (balance - n, 2) to indicate that it will round to two decimal places.
+I assigned the input to the variable `n` which asks the user to enter the cost of the song amongst three different possible options: $0.99, $1.99, $2.99. For the purpose of this lab, I did not include an option for if the user inputs a number outside of these three options.
 
-Now, for the print() functions to print the output for the user, I used f-statements which allow me to input the variables into the sentences using {} brackets.
+```python
+n = float(input ("Enter the cost of the song, $0.99, $1.99 or $2.99:"))
+```
 
-Finally, for the else statement, if the balance is not enough to purchase anything, then it will inform the user with a print statement. Because the balance is lower than 0.99, then the while statement will break automatically and return back to main().
+I introduced the `if` statement which indicates that a conditional will occur if the balance is equal to or higher than the input. Once the user inputs the cost of the song, it will subtract the input from the balance. Something that was not included in this tutorial is the `round()` function which rounds a floating number to a specified decimal. In this case, I typed `(balance - n, 2)` to indicate that it will round to two decimal places.
+
+```python
+balance = round(balance - n,2)
+```
+
+Now, for the `print()` functions to print the output for the user, I used f-statements which allow me to input the variables into the sentences using `{}` brackets.
+
+Finally, for the `else` statement, if the balance is not enough to purchase anything, then it will inform the user with a print statement. Because the balance is lower than 0.99, then the while statement will break automatically and return back to main().
+
+```python
+ else: 
+    print(f"Sorry, the balance is ${balance}. You can't buy more songs.")
+```
 
 To close out the code, I finalized with main() which will run the code.
 
@@ -123,27 +140,51 @@ Here's how the code works when I run it:
 
 ### 2. ph_level.py ###
 
-Because log function will be involved, I imported the math library which includes the function.
+Because `log` function will be involved, I imported the `math` library which includes the function.
 
-I defined the code as main() for when it will run.
+I defined the code as `main()` for when it will run.
 
-First, I made two print() functions to instruct the user for what the program was used for as per the requirements of the lab.
+First, I made two `print()` functions to instruct the user for what the program was used for as per the requirements of the lab.
 
-I assigned the concentration of hydroxide ions to hydroxide_ions which is a variable that will match the input of the user.
+I assigned the concentration of hydroxide ions to `hydroxide_ions` which is a variable that will match the input of the user.
 
-Then, I introduced a while statement which creates a loop so long as hydroxide_ions is larger than 0.
+```python
+hydroxide_ions = float(input("Please input the concentration of hydroxide:"))
+```
 
-I defined the concentration of hydronium ions as hydronium_ions which is the result of the formula provided in the instruction lab. ** is the substitute for ^ in Python which represents the power of a number.
+Then, I introduced a `while` statement which creates a loop so long as `hydroxide_ions` is larger than 0.
 
-Afterwards, I defined pH using the variable pH which will use the method of the math library that was imported earlier. The log10 method from the math library will be used. As such, the syntax would be math.log10(). The 10 is because the log is in base of 10.
+I defined the concentration of hydronium ions as `hydronium_ions` which is the result of the formula provided in the instruction lab. `**` is the substitute for `^` in Python which represents the power of a number.
 
-Now, I introduced an if statement to represent a condition that if the pH is less than 7, then the variable of pH_level will be Acidic. I also introduced an elif which is the other condition in which if the pH_level is more than 7, then the variable of pH_level will be Basic.
+```python
+hydronium_ions =(10**(-14)/hydroxide_ions)
+```
 
-Now, the loop will end off by printing a statement which tells the user the concentration of hydroxide ions as inputted earlier followed by the pH level. The statement will also tell the user if the solution is Acidic of Basic.
+Afterwards, I defined pH using the variable `pH` which will use the method of the math library that was imported earlier. The `log10` method from the math library will be used. As such, the syntax would be `math.log10()`. The `10` is because the log is in base of 10.
 
-The statement return main() will reset the loop and ask the user to input the concentration of hydroxide ions all over again.
+```python
+pH=(-math.log10(hydronium_ions))
+```
 
-The code also has an else statement. If the hydroxide_ions variable is 0 as inputted by the user, then it will print a statement informing the user that the program will quit. This would end the running code.
+Now, I introduced an if statement to represent a condition that if the pH is less than 7, then the variable of `pH_level` will be `Acidic`. I also introduced an `elif` which is the other condition in which if the `pH_level` is more than `7`, then the variable of `pH_level` will be `Basic`.
+
+```
+if pH < 7:
+     pH_level = "Acidic"
+ elif pH > 7:
+      pH_level = "Basic"
+```
+
+Now, the loop will end off by printing a statement which tells the user the concentration of hydroxide ions as inputted earlier followed by the pH level. The statement will also tell the user if the solution is `Acidic` or `Basic`.
+
+The statement `return main()` will reset the loop and ask the user to input the concentration of hydroxide ions all over again.
+
+The code also has an `else` statement. If the `hydroxide_ions` variable is `0` as inputted by the user, then it will print a statement informing the user that the program will quit. This would end the running code.
+
+```python
+else:
+    print("You entered 0, so the program will quit.")
+```
 
 ![alt text](screenshots/image.png)
 
