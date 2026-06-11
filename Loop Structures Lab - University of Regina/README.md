@@ -115,6 +115,8 @@ Finally, for the else statement, if the balance is not enough to purchase anythi
 
 To close out the code, I finalized with main() which will run the code.
 
+![alt text](screenshots/image-1.png)
+
 ### 2. ph_level.py ###
 
 Because log function will be involved, I imported the math library which includes the function.
@@ -138,3 +140,5 @@ Now, the loop will end off by printing a statement which tells the user the conc
 The statement return main() will reset the loop and ask the user to input the concentration of hydroxide ions all over again.
 
 The code also has an else statement. If the hydroxide_ions variable is 0 as inputted by the user, then it will print a statement informing the user that the program will quit. This would end the running code.
+
+![alt text](screenshots/image.png)
