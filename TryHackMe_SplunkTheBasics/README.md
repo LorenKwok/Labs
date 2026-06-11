@@ -1,3 +1,4 @@
+In this lab, I completed the Splunk: The Basics room in TryHackMe which teaches the fundamentals of using the Security and Information Event Management tool known as Splunk.
 
 ## Learning Outcomes ##
 
