@@ -117,6 +117,10 @@ To close out the code, I finalized with main() which will run the code.
 
 ![alt text](screenshots/image-1.png)
 
+Here's how the code works when I run it:
+
+![alt text](screenshots/image-2.png)
+
 ### 2. ph_level.py ###
 
 Because log function will be involved, I imported the math library which includes the function.
@@ -131,7 +135,7 @@ Then, I introduced a while statement which creates a loop so long as hydroxide_i
 
 I defined the concentration of hydronium ions as hydronium_ions which is the result of the formula provided in the instruction lab. ** is the substitute for ^ in Python which represents the power of a number.
 
-Afterwards, I defined pH using the variable pH which will use the method of the math library that was imported earlier. The lob10 method from the math library will be used. As such, the syntax would be math.log10(). The 10 is because the log is in base of 10.
+Afterwards, I defined pH using the variable pH which will use the method of the math library that was imported earlier. The log10 method from the math library will be used. As such, the syntax would be math.log10(). The 10 is because the log is in base of 10.
 
 Now, I introduced an if statement to represent a condition that if the pH is less than 7, then the variable of pH_level will be Acidic. I also introduced an elif which is the other condition in which if the pH_level is more than 7, then the variable of pH_level will be Basic.
 
@@ -142,3 +146,9 @@ The statement return main() will reset the loop and ask the user to input the co
 The code also has an else statement. If the hydroxide_ions variable is 0 as inputted by the user, then it will print a statement informing the user that the program will quit. This would end the running code.
 
 ![alt text](screenshots/image.png)
+
+Here's the code at work:
+
+![alt text](screenshots/image-3.png)
+
+![alt text](screenshots/image-4.png)
