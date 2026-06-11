@@ -74,11 +74,11 @@ Any time the API has been changed, it will reflect in **http://127.0.0.1:8000/**
 
 When I go to the URL, the following appears:
 
-![Screenshot](Screenshots/Message%20Hello.png)
+![Screenshot](screenshots/Message%20Hello.png)
 
 You may also go to **http://127.0.0.1:8000/docs** to view the documentation including the directories that FastAPI generates automatically:
 
-![Screenshot](Screenshots/Docs.png)
+![Screenshot](screenshots/Docs.png)
 
 ## Path and Query Parameters ##
 
@@ -95,4 +95,4 @@ This line of code will ask FastAPI to call whatever item ID is being input and p
 
 Now, if we save and go back to the documentation browser for FastAPI through http://127.0.0.1:8000/docs, we will see a new object called **/items/{item_id}** which is described as **Read Item**. If we click "Try It Out" to test this feature, it will ask us to input an **item_id**, in which case I used ***123*** to try it out which yields the following:
 
-![Screenshot](Screenshots/123.png)
+![Screenshot](screenshots/123.png)
