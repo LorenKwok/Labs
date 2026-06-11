@@ -15,7 +15,7 @@ On TryHackMe's virtual machine, there is a log fil called VPN_logs under /root/R
 
 On Splunk's main landing page, there is an option to add the log files under "Add Data".
 
-![alt text](image.png)
+![alt text](screenshots/image.png)
 
 From this screen, there is either the option to add data through forwarders or through manual upload. Here, I chose the option to "Upload" the data from the virtual machine. 
 
@@ -23,7 +23,7 @@ From here, I can set the source type. For the purpose of this lab, I am keeping 
 
 Additionally, I changed the host field value to VPN_Connections which should match the name of the machine in the log file. As per one of the questions in the lab, I created a new index called "vpn_logs" and set the index to it.
 
-![alt text](image-1.png) ![alt text](image-2.png) ![alt text](image-3.png) ![alt text](image-4.png)
+![alt text](screenshots/image-1.png) ![alt text](screenshots/image-2.png) ![alt text](screenshots/image-3.png) ![alt text](screenshots/image-4.png)
 
 Afterwards, I hit submit and began parsing the log files through Splunk.
 
@@ -33,13 +33,13 @@ Afterwards, I hit submit and began parsing the log files through Splunk.
 
 Immediately, we can see that there are a total of 2,862 events in this log file.
 
-![alt text](image-5.png)
+![alt text](screenshots/image-5.png)
 
 2) *How many log events are captured by the user Maleena?*
 
 One of the available fields in the log files is "UserName". Using this, we may conduct a Splunk Processing Language (SPL) search through 'UserName="Maleena"'. 
 
-![alt text](image-6.png)
+![alt text](screenshots/image-6.png)
 
 Here, we get 60 log events.
 
@@ -47,7 +47,7 @@ Here, we get 60 log events.
 
 Here, like the previous question I used SPL again. From the available fields, we can see one called "Source_ip". As such, I searched 'Source_ip="107.14.182.38"' (case-sensitive).
 
-![alt text](image-7.png)
+![alt text](screenshots/image-7.png)
 
 We get a UserName identified as "Smith."
 
@@ -55,7 +55,7 @@ We get a UserName identified as "Smith."
 
 For this question, we need to use Boolean logic to EXCLUDE France. There is a field called "Source_Country" so we'll use that. First, we introduce NOT followed by the standard search of 'Source_Country="France"' to accomplish this.
 
-![alt text](image-8.png)
+![alt text](screenshots/image-8.png)
 
 So, doing this will get us 2,814 log events.
 
@@ -63,6 +63,6 @@ So, doing this will get us 2,814 log events.
 
 Now that we know SPL, this is an easy question to wrap things up. We search using 'Source_ip="107.3.206.58"'.
 
-![alt text](image-9.png)
+![alt text](screenshots/image-9.png)
 
 The answer to this final question is 14.
