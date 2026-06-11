@@ -1,28 +1,34 @@
-## Loop Structures Lab ##
+# Loop Structures Lab #
 
-### Learning Outcomes ###
+## Learning Outcomes ##
 - While loop/else
 - Math import
 - Variable Assignment
 - Return function to break loop
 - f-statement
 
-### Lab Question ###
+## Lab Question ##
 
 For this lab, I followed the instructions from the [Loop Structures](https://www.labs.cs.uregina.ca/165/loops/index.html#for) section of the University of Regina's CS/STAT 165 course. For documentation purporses, I included the instructions below.
 
-<span style="color:yellow">1. Online Music Store</span>
+### 1. Online Music Store ##
 
 For your birthday, you received a $10 gift certificate for an online music store. The cheapest song in the store costs $0.99. You can buy songs until you can't afford any more songs.
 
-Requirement
+*Requirement*
 
 -Complete the Python program music_store.py that allows a user to repeatedly buy songs from an online music store.
+
 -Set an initial balance of $10.
+
 -Use a loop to keep asking the user to buy songs while there's at least enough balance to afford the cheapest song.
+
 -For simplicity, just enter the cost of a song from the user and ignore the song and artist name.
+
 -Check to see if the user can afford the song before completing the purchase. Make sure that negative balances will not happen.
+
 -Give feedback to the user indicating whether their purchase was successful and how much money they have left.
+
 -When the loop ends, display a goodbye message with the remaining balance.
 
 Sample output:
@@ -30,28 +36,34 @@ Sample output:
 Enter the cost of the song, $0.99, $1.99 or $2.99: 0.99
 Song purchased for $ 0.99; enjoy!
 The remaining balance is 9.01
+
 Enter the cost of the song, $0.99, $1.99 or $2.99: 1.99
 Song purchased for $ 1.99; enjoy!
 The remaining balance is 7.02
+
 Enter the cost of the song, $0.99, $1.99 or $2.99: 2.99
 Song purchased for $ 2.99; enjoy!
 the remaining balance is 4.03
+
 Enter the cost of the song, $0.99, $1.99 or $2.99: 1.99
 Song purchased for $ 1.99; enjoy!
 The remaining balance is 2.04
+
 Enter the cost of the song, $0.99, $1.99 or $2.99: 2.99
 Your choice is too expensive. Choose another song.
 The remaining balance is:2.04
+
 Enter the cost of the song, $0.99, $1.99 or $2.99: 1.99
 Song purchased for $ 1.99; enjoy!
 The remaining balance is 0.05
+
 Sorry, the balance is $ 0.05. You can't buy more songs.
 
-<span style="color:yellow">2. Complete the program ph_level.py to determine the pH of a solution.</span>
+### 2. Complete the program ph_level.py to determine the pH of a solution. ###
 
 A solution with a pH level less than 7 is acidic; otherwise, it is basic. Determining the pH of a solution is important, since many organisms and micro-organisms can only live in a limited pH range.
 
-Instructions:
+*Instructions:*
 
 Request an input for a concentration of hydroxide ions, denoted OH −
 Calculate the concentration of hydronium ions, abbreviated H +, using this formula:
@@ -64,7 +76,7 @@ Calculate the pH level from the hydronium concentration with this formula:
 
 Your program should print something like this:
 
-Sample Output:
+*Sample Output:*
 
 This program calculates pH level of a solution.
 Enter 0 to quit the program.
@@ -83,11 +95,11 @@ The ph level of solution 0.0000000009 is 4.9542425094. The solution is acidic.
 Please input the concentration of hydroxide: 0
 You entered 0, so quit the program.
 
-### Details ###
+## Details ##
 
 For this lab, I first wrote the code myself then used Claude to help with corrections and learn additional information.
 
-<span style="color:yellow">1. music_store.py</span>
+### 1. music_store.py ###
 
 First, I defined the code as main() for when it runs.
 
@@ -103,7 +115,7 @@ Finally, for the else statement, if the balance is not enough to purchase anythi
 
 To close out the code, I finalized with main() which will run the code.
 
-<span style="color:yellow">2. ph_level.py</span>
+### 2. ph_level.py ###
 
 Because log function will be involved, I imported the math library which includes the function.
 
