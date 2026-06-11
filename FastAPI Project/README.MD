@@ -1,6 +1,9 @@
 # FastAPI Project #
 
-For this FastAPI Project, I followed along with the following guide with the help of Claude to assist me with any errors and help me learn by defining functions and objects: https://github.com/inanpy/fastapi-getting-started-guide
+For this FastAPI Project, I am using the following [guide](https://github.com/inanpy/fastapi-getting-started-guide
+) with the help of Claude to assist me with any errors and help me learn by defining functions and objects.
+
+Another valuable guide is [FastAPI's official documentation](https://fastapi.tiangolo.com/learn/) which succintly explains Pythn concepts and FastAPI deployment.
 
 ## Setting up virtual environment ##
 

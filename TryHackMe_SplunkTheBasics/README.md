@@ -1,3 +1,5 @@
+# TryHackMe - Splunk the Basics #
+
 In this lab, I completed the Splunk: The Basics room in TryHackMe which teaches the fundamentals of using the Security and Information Event Management tool known as Splunk.
 
 ## Learning Outcomes ##
@@ -8,7 +10,7 @@ In this lab, I completed the Splunk: The Basics room in TryHackMe which teaches 
 
 ## Connecting to Splunk ##
 
-First, I spun Splunk up on TryHackMe's AttackBox using the dedicated IP address of 10.145.158.23.
+First, I spun Splunk up on TryHackMe's Virtual Machine by entering the dedicated IP address that was provided to me into the browser.
 
 ## Uploading the Log files ##
 
