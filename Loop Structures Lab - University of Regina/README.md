@@ -17,21 +17,21 @@ For your birthday, you received a $10 gift certificate for an online music store
 
 *Requirement*
 
--Complete the Python program music_store.py that allows a user to repeatedly buy songs from an online music store.
+- Complete the Python program music_store.py that allows a user to repeatedly buy songs from an online music store.
 
--Set an initial balance of $10.
+- Set an initial balance of $10.
 
--Use a loop to keep asking the user to buy songs while there's at least enough balance to afford the cheapest song.
+- Use a loop to keep asking the user to buy songs while there's at least enough balance to afford the cheapest song.
 
--For simplicity, just enter the cost of a song from the user and ignore the song and artist name.
+- For simplicity, just enter the cost of a song from the user and ignore the song and artist name.
 
--Check to see if the user can afford the song before completing the purchase. Make sure that negative balances will not happen.
+- Check to see if the user can afford the song before completing the purchase. Make sure that negative balances will not happen.
 
--Give feedback to the user indicating whether their purchase was successful and how much money they have left.
+- Give feedback to the user indicating whether their purchase was successful and how much money they have left.
 
--When the loop ends, display a goodbye message with the remaining balance.
+- When the loop ends, display a goodbye message with the remaining balance.
 
-Sample output:
+*Sample output:*
 
 Enter the cost of the song, $0.99, $1.99 or $2.99: 0.99
 Song purchased for $ 0.99; enjoy!
