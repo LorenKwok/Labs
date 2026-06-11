@@ -146,6 +146,11 @@ I defined the code as `main()` for when it will run.
 
 First, I made two `print()` functions to instruct the user for what the program was used for as per the requirements of the lab.
 
+```python
+print("This program calculates pH level of a solution.")
+print("Enter 0 to quit the program.")
+```
+
 I assigned the concentration of hydroxide ions to `hydroxide_ions` which is a variable that will match the input of the user.
 
 ```python
