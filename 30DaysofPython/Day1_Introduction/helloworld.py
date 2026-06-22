@@ -1,5 +1,5 @@
 #30 Days of Python# 
-#Day 1 - Introduction#
+##Day 1 - Introduction##
 
 print(3+4) #addition(+)
 print(4-3) #subtraction(-)
@@ -9,7 +9,7 @@ print(4**3) #exponential(**)
 print(4%3) #modulus(%)
 print(4//3) #floor division operator(//)
 
-#Write strings on the python interactive shell. The strings are the following:
+#Write strings on the python interactive shell.
 print("Loren")
 print("Kwok")
 print("Canada")
