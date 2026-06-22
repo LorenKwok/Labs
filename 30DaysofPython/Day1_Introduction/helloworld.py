@@ -33,6 +33,7 @@ print(type(True)) #boolean
 print(type([2,3,5,7])) #list
 print(type(("Tony","Steve","Bruce","Thor","Clint"))) #tuple
 print(type({"Tony","Steve","Bruce","Thor","Clint"})) #set
+print(type({"name":"Loren","country":"Canada","City":"Vancouver","age":31})) #dictionary
 
 #Find an Euclidean distance between (2,3) and (10,8)
 print("d","=",((10-2)**2+(8-3)**2)**0.5)                                       
