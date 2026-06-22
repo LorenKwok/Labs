@@ -1,7 +1,7 @@
 #30 Days of Python# 
-##Day 2 - Variables, Builtin Functions##
+#Day 2 - Variables, Builtin Functions#
 
-###Exercises: Level 1###
+#Exercises: Level 1
 
 first_name = 'Loren'
 last_name = 'Kwok'
@@ -20,7 +20,7 @@ character_name, superhero_name, movie, studio, owner = 'Steve Rogers', 'Captain 
 
 print (character_name, superhero_name, movie, studio, owner)
 
-###Exercises: Level 2###
+#Exercises: Level 2
 
 print(type(first_name), type(last_name), type(full_name), type(country), type(city), type(age), type(year), type(is_married), type(is_true), type(is_light_on)) #Check data type of all variables
 print(type(character_name), type(superhero_name), type(movie), type(studio), type(owner))

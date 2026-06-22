@@ -1,5 +1,5 @@
-#30 Days of Python# 
-##Day 1 - Introduction##
+#30 Days of Python
+#Day 1 - Introduction
 
 print(3+4) #addition(+)
 print(4-3) #subtraction(-)
