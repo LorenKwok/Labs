@@ -1,3 +1,6 @@
+#30 Days of Python
+#Day 3 - Operators
+
 integer = 31 #1. Declare age as integer variable
 height = 5.8 #2. Declare height as a float variable
 complex = 1+1j #3. Declare a variable that store a complex number
