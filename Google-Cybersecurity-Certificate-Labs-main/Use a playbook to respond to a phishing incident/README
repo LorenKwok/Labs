@@ -1,0 +1,7 @@
+Phishing Alert Sample from Google Cybersecurity Certificate
+
+In the Google Cybersecurity Certificate's "Sound the Alarm: Detection and Response" segment, I have completed a lab involving the analysis of a sample phishing alert.  
+
+I examined the incident including the who, what, when, where, why.  Afterwards, I used VirusTotal to analyze the SHA256 hash and find known information regarding the malicious file: 54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b.  Due to the file being marked as a malware by 57/70 security vendors with a -277 community score, the file can be identifeid as malicious.  
+
+I have attached the PDF file of the phishing alert ticket sample including my comments in the ticket.
