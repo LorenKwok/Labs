@@ -1,5 +1,5 @@
-#30 Days of Python# 
-#Day 2 - Variables, Builtin Functions#
+#30 Days of Python
+#Day 2 - Variables, Builtin Functions
 
 #Exercises: Level 1
 
