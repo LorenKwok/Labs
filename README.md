@@ -1,2 +1,2 @@
-## Labs ##
-This is the folder for my labs as part of my learning journey.
+## Writeups ##
+This is the folder that contains my writeups for online courses, learning materials, CTFs, etc. I'm keeping major labs as their own separate repositories.
